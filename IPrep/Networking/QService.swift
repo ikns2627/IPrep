@@ -16,9 +16,9 @@ class QService: NSObject{
     static var instance = QService()
     
     func getAllQuestions(success:@escaping ([CModel]) -> Void, failure:@escaping (Error) -> Void){
-        let url = "//api.jsonbin.io/b/5b3d6cdc4d5ea95c8ba09e2d/1"
+        let url = "https://api.jsonbin.io/b/5b3d6cdc4d5ea95c8ba09e2d/5"
         ApiClient.requestGETURL(url, success: {json in
-            guard let info = Mapper<QModel>().map(JSONObject: json.rawValue), let categories = Mapper<CModel>().mapArray(JSONObject: info.goodStuff) else{
+            guard let info = Mapper<QModel>().map(JSONObject: json.rawValue), let categories = info.goodStuff else{
                 success([])
                 return
             }

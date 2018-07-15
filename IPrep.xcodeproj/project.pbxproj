@@ -15,6 +15,8 @@
 		22B4E14320EDA1050005E078 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4E14220EDA1050005E078 /* ApiClient.swift */; };
 		22B4E14520EDA1350005E078 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4E14420EDA1350005E078 /* Models.swift */; };
 		22B4E14720EDA25A0005E078 /* QService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4E14620EDA25A0005E078 /* QService.swift */; };
+		C6160E2920EF3CF600854950 /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6160E2820EF3CF600854950 /* QViewController.swift */; };
+		C64550FF20EE8110003B8D54 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64550FE20EE8110003B8D54 /* WebViewController.swift */; };
 		CDBF434E12C6ED27807E241B /* Pods_IPrep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FEF929E8EB3CC96CA1B8A1D /* Pods_IPrep.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		22B4E14620EDA25A0005E078 /* QService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QService.swift; sourceTree = "<group>"; };
 		7FEF929E8EB3CC96CA1B8A1D /* Pods_IPrep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPrep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBB3503683B285182CF0D58 /* Pods-IPrep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPrep.release.xcconfig"; path = "Pods/Target Support Files/Pods-IPrep/Pods-IPrep.release.xcconfig"; sourceTree = "<group>"; };
+		C6160E2820EF3CF600854950 /* QViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QViewController.swift; sourceTree = "<group>"; };
+		C64550FE20EE8110003B8D54 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F95D250F85CC7A057183ABA8 /* Pods-IPrep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPrep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IPrep/Pods-IPrep.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,10 +74,12 @@
 				22B4E14120EDA0EE0005E078 /* Networking */,
 				22B4E12B20ED9DB50005E078 /* AppDelegate.swift */,
 				22B4E12D20ED9DB50005E078 /* ViewController.swift */,
+				C6160E2820EF3CF600854950 /* QViewController.swift */,
 				22B4E12F20ED9DB50005E078 /* Main.storyboard */,
 				22B4E13220ED9DB50005E078 /* Assets.xcassets */,
 				22B4E13420ED9DB50005E078 /* LaunchScreen.storyboard */,
 				22B4E13720ED9DB50005E078 /* Info.plist */,
+				C64550FE20EE8110003B8D54 /* WebViewController.swift */,
 			);
 			path = IPrep;
 			sourceTree = "<group>";
@@ -117,7 +123,7 @@
 				22B4E12520ED9DB50005E078 /* Frameworks */,
 				22B4E12620ED9DB50005E078 /* Resources */,
 				6A0478C22EC49AC9D4973F97 /* [CP] Embed Pods Frameworks */,
-				6FFBA251E251AAB19D38B7CC /* [CP] Copy Pods Resources */,
+				A70060D8114642BD3F591465 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,7 +222,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IPrep/Pods-IPrep-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6FFBA251E251AAB19D38B7CC /* [CP] Copy Pods Resources */ = {
+		A70060D8114642BD3F591465 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,6 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B4E12E20ED9DB50005E078 /* ViewController.swift in Sources */,
+				C64550FF20EE8110003B8D54 /* WebViewController.swift in Sources */,
+				C6160E2920EF3CF600854950 /* QViewController.swift in Sources */,
 				22B4E12C20ED9DB50005E078 /* AppDelegate.swift in Sources */,
 				22B4E14720EDA25A0005E078 /* QService.swift in Sources */,
 				22B4E14320EDA1050005E078 /* ApiClient.swift in Sources */,
@@ -381,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RM999DZCQ2;
 				INFOPLIST_FILE = IPrep/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ik.IPrep;
@@ -396,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RM999DZCQ2;
 				INFOPLIST_FILE = IPrep/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ik.IPrep;

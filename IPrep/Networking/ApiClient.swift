@@ -15,7 +15,7 @@ class ApiClient: NSObject{
     class func requestGETURL(_ strURL: String, success:@escaping (JSON) -> Void, failure:@escaping (Error) -> Void) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         var urlRequest = URLRequest(url: URL(string: strURL)!)
-        urlRequest.allHTTPHeaderFields = ["secret-key":apikey]
+        urlRequest.setValue(apikey, forHTTPHeaderField: "secret-key")
         Alamofire.request(urlRequest).responseJSON { (responseObject) -> Void in
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             if responseObject.result.isSuccess {
